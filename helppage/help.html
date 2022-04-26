@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nykaa - Help</title>    
+    <style>
+        *{
+            margin: 0px ;
+            padding: 0px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        body{
+            background-color: rgb(255, 246, 246);
+        }
+
+        img{
+            width: 50px;
+        }
+        #par1{
+            padding: 20px;     
+        }
+
+        #icon>div{
+            padding: 20px ;  
+            margin: 20px; 
+            text-align: center;
+        }
+        #par2{   
+            text-align: center;    
+            padding-top: 50px;     
+            padding-bottom: 50px ;     
+            width: 100%;   
+            background-color: rgb(252,39,121) ;  
+        }
+        #par2>input,button{
+            border-radius: 4px ;
+            padding: 5px;
+        }
+        #par2>button{
+            background-color: rgb(220,9,87) ;    
+            color: white ;  
+            border: 0px; 
+            margin-left: -10px;
+            padding: 10px 30px ;
+        }
+        #par2>input{
+            border: 0px;     
+            width: 350px;    
+            height: 25px;
+        }
+        #icon>div>p{
+            padding: 10px;
+        }
+        #icon>div{
+            cursor: pointer; 
+        }
+
+        #icon{
+            display: flex; 
+            flex-wrap: wrap;
+            width: 90%; 
+            margin: auto ; 
+            color: rgb(252,39,121) ;
+        }
+        #info{
+            margin: auto; 
+            padding: 20px;
+            text-align: center ;
+        }
+        #par4{
+            text-align: center; 
+            margin: auto;
+        }
+        #par3,#par4{
+            text-align: center;
+            padding: 20px;    
+            /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;       */
+        }
+        h5{
+            padding: 10px 0px ;     
+            /* font-family: sans-serif;      */
+            font-weight: lighter;     
+        }
+
+        #par1{
+            display: flex;  
+            justify-content: space-between; 
+            align-items: center;    
+            padding: 0px 30px;
+        }
+        #share>img{
+            width: 20px;
+            margin: 0px 5px ;       
+            cursor: pointer ;  
+        }
+        #share>img:hover{
+            width: 25px ;
+        }
+        #web{
+            color: rgb(252,117,194) ;
+        }
+        #par1>img{
+            width: 130px ;
+        }
+        #par1>h4{
+            color: rgb(255, 0, 106);  
+            font-weight: normal ;     
+        }
+        #par1>h4:hover{   
+            color: blue;    
+        }   
+
+    </style>
+</head>
+<body>
+    <div id="par1" > 
+        <!-- <h1> NYKAA </h1>  -->
+        <img src="https://d2un9pqbzgw43g.cloudfront.net/main/nykaa-1200x800-1.png" alt="">   
+        <h4 onclick="window.location.href='help.html'"> Back to help-center </h4>
+    </div>
+    <div id="par2">   
+        <input type="text" id="search" placeholder="Search FAQs" >     
+        <button> Submit </button>     
+    </div>
+    <div id="par3">
+        <h2> Help Categories </h2>    
+        <div id="icon" >   
+            <div id="odrel">
+                <img src="https://cdn-icons-png.flaticon.com/128/1170/1170627.png" alt="a1">  
+                <p> Order Related </p>
+            </div>
+            <div id="shp">
+                <img src="https://img.icons8.com/ios-filled/2x/truck.png" alt="a2">  
+                <p> Shopping </p>
+            </div>
+            <div id="acc">
+                <img src="https://cdn-icons-png.flaticon.com/128/1077/1077114.png" alt="a3">
+                <p> Nykaa Account </p>
+            </div>
+            <div id="payt">
+                <img src="https://cdn-icons-png.flaticon.com/128/3037/3037247.png" alt="a4">  
+                <p> Payments </p>
+            </div>
+            <div id="oth">
+                <img src="https://cdn-icons-png.flaticon.com/128/108/108153.png" alt="a4"> 
+                <p>Others</p>
+            </div>
+            <div id="nya">
+                <img src="https://cdn-icons-png.flaticon.com/128/1077/1077971.png" alt="a5"> 
+                <p> Sell On Nykaa </p>
+            </div>
+            <div id="wrtu">
+                <img src="https://cdn-icons.flaticon.com/png/128/3152/premium/3152089.png?token=exp=1645464831~hmac=bd5170ac3d0304fdb8c4417d845d5cb8" alt="a6">
+                <p> Write to us </p>
+            </div>
+        </div>
+    </div>     
+    <hr width="90%" >
+    <div id="info">
+        <h5> Email: support@nykaa.com </h5>  
+        <h5> Email for international orders: internationalsupport@nykaa.com </h5>
+    </div>
+    <hr width="90%"> 
+    <div id="par4">
+        <h5> Copyright © <span id="web"> Nykaa </span> 2020. All Rights Reserved. </h5> 
+        <div id="share">
+            <img src="https://cdn-icons-png.flaticon.com/128/733/733635.png" alt="a1" onclick="window.location.href='https://twitter.com/i/flow/login'"  />
+            <img src="https://cdn-icons-png.flaticon.com/128/20/20837.png" alt="a2" onclick="window.location.href='https://www.facebook.com/'"   />     
+            <img src="https://cdn-icons.flaticon.com/png/128/3128/premium/3128210.png?token=exp=1645466632~hmac=ce0f600e8317fd4c3c2fee9e1c35af5c" alt="a3" onclick="window.location.href='https://www.youtube.com/'"  >     
+            <img src="https://cdn-icons.flaticon.com/png/128/3128/premium/3128226.png?token=exp=1645467016~hmac=b216b8eaa61263d6f48325e58e82c7e8" alt="a4"  onclick="window.location.href='https://in.pinterest.com/'" >     
+            <img src="https://cdn-icons.flaticon.com/png/128/717/premium/717392.png?token=exp=1645466837~hmac=9e64de1a139ece3778b48015984b7fbd" alt="a5"  onclick="window.location.href='https://www.instagram.com/'" >        
+        </div>
+    </div>
+</body>
+</html>
+
+
+<script>   
+    // to order related page  . 
+     document.querySelector("#odrel").addEventListener("click", put1) ; 
+
+    function put1(e){
+        e.preventDefault();      
+        window.location.href= "helpOrder.html"
+    }
+    //  to shoping related page . 
+    document.querySelector("#shp").addEventListener("click", put2) ; 
+
+    function put2(e){
+        e.preventDefault();      
+        window.location.href= "helpshopping.html"
+    }
+
+    document.querySelector("#acc").addEventListener("click", put3) ; 
+
+    function put3(e){
+        e.preventDefault();      
+        window.location.href= "helpAct.html"
+    }
+
+    document.querySelector("#payt").addEventListener("click", put4) ; 
+
+    function put4(e){
+        e.preventDefault();      
+        window.location.href= "helpPay.html"
+    }
+
+    document.querySelector("#oth").addEventListener("click", put5) ; 
+
+    function put5(e){
+        e.preventDefault();      
+        window.location.href= "helpOth.html"
+    }
+
+    document.querySelector("#nya").addEventListener("click", put6) ; 
+
+    function put6(e){
+        e.preventDefault();      
+        window.location.href= "helpSell.html"
+    }
+
+    document.querySelector("#wrtu").addEventListener("click", put7) ; 
+
+    function put7(e){
+        e.preventDefault();      
+        window.location.href= "helpwts.html"
+    }
+
+
+</script>   
+

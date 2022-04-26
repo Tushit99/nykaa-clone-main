@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-color: rgb(255, 255, 255);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        #par1 {
+            padding: 20px;
+        }
+
+        #par2 {
+            text-align: center;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            width: 100%;
+            background-color: rgb(252, 39, 121);
+        }
+
+        #par2>input,
+        button {
+            border-radius: 4px;
+            padding: 5px;
+        }
+
+        #par2>button {
+            background-color: rgb(220, 9, 87);
+            color: white;
+            border: 0px;
+            margin-left: -10px;
+            padding: 10px 30px;
+        }
+
+        #par2>input {
+            border: 0px;
+            width: 350px;
+            height: 25px;
+        }
+
+        #info {
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        #par1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 30px;
+        }
+
+        #par1>img {
+            width: 130px;
+        }
+
+        #par1>h6 {
+            color: rgb(255, 0, 106);
+            font-weight: normal;
+            font-size: medium; 
+            cursor: pointer;   
+        }
+
+        #par1>h6:hover{
+            color: rgb(55, 0, 255);
+        }
+        #he1,
+        #he2{
+            color: rgb(255, 0, 43);
+            cursor: pointer;
+        }
+        #he2:hover {
+            color: blue;
+        }
+        #he1:hover {
+            color: blue;
+        }
+        #par3 {
+            margin: 20px 40px;
+        }
+        #par4 {
+            display: flex;   
+            width: 80% ; 
+            margin: auto;
+        }
+
+        .come{
+            margin: 24px ;
+        }
+        .come>h3{
+            border: 1px solid rgb(126, 115, 115);    
+            border-radius: 2px;    
+            font-family: Arial Narrow ;  
+            font-weight: lighter ; 
+            padding: 5px; 
+            color: red;
+        }
+        .come>h4{
+            border: 1px solid rgb(126, 115, 115); 
+            border-radius: 2px;    
+            font-family: Arial ;  
+            font-weight: lighter;
+            padding: 5px;
+            background-color: rgb(235, 235, 235);
+        }
+        h1{
+            text-align: center ; 
+            font-family: Arial ;  
+            font-size: xx-large;  
+            margin: 40px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div id="par1">
+        <!-----line 1----->
+        <img src="https://d2un9pqbzgw43g.cloudfront.net/main/nykaa-1200x800-1.png" alt="">
+        <h6 onclick="window.location.href='help.html'"> Back to help-center </h6>
+    </div>
+    <div id="par2">
+        <!--------line two------>
+        <input type="text" id="search" placeholder="Search FAQs">
+        <button> Submit </button>
+    </div>
+    <div id="par3">
+        <p> <span id="he1"> Help-Center </span> >> <span id="he2"> Sell On Nykaa </span> </p>
+    </div>
+    <h1> Sell On Nykaa </h1>   
+    <div id="par4">
+        <div id="box1">
+            <div class="come">  
+                <h3> Order Placement </h3>
+                <h4> What does 'Out of Stock' mean? </h4>
+                <h4> Why do I see different prices for the same product? </h4>
+                <h4> Can I club my orders from different sellers to be delivered together? </h4>
+                <h4> How do I sign up for a Nykaa account? </h4>
+                <h4> What are the benefits of signing up? </h4>
+                <h4> Do I have to have an account to place an order at Nykaa? </h4>
+                <h4> How do I place a Nykaa order? </h4>
+                <h4> Can I edit my order after confirmation? </h4>
+                <h4> Can I buy multiple products in a single order? </h4>
+                <h4> How do I know that my order is confirmed? </h4>
+                <h4> Can I ship the products to an address that is different from my billing address? </h4>
+                <h4> Can I leave items in my shopping bag for future purchase? </h4>
+                <h4> Can I order a product that is Out of Stock? </h4>
+            </div>
+            <div class="come">
+                <h3> Shipping and Delivery Policies </h3>
+                <h4> Why do I see a 'delivery charge'? </h4>
+                <h4> Are there any hidden charges (Octroi or Sales Tax) when I shop on Nykaa? </h4>
+                <h4> Do sellers on Nykaa ship internationally? </h4>
+                <h4> Shipping Policy </h4>
+                <h4> How does the delivery process work? </h4>
+                <h4> How are items packaged? </h4>
+                <h4> What is the range of locations to which Nykaa ships their products? </h4>
+                <h4> My order has been shipped. Now how can I track it? </h4>
+                <h4> What is the estimated delivery time? </h4>
+                <h4> My order will be shipped in multiple shipments? What does this mean? </h4>
+                <h4> Does Nykaa ship outside India? </h4>
+                <h4> Does Nykaa have any physical stores? </h4>
+                <h4> 'Invalid pincode' message</h4>
+            </div>
+        </div>
+        <div id="box2">
+            <div class="come">
+                <h3> Authenticity and Genuineness </h3>    
+                <h4> What measures does Nykaa take to ensure the quality of Nykaa products? </h4>
+                <h4> What measures does Nykaa take to ensure the products are not damaged during delivery? </h4>
+                <h4> Do the storage systems ensure that the quality of the products is intact? </h4>
+                <h4> What about Warranty and Benefit claims of the Products? </h4>
+            </div>
+            <div class="come">
+                <h3> Nykaa Subscription </h3>     
+                <h4> How does subscription work? </h4>
+                <h4> How do I cancel or discontinue my subscription? </h4>
+                <h4> How do discounts in subscription work? </h4>
+            </div>
+            <div class="come">
+                <h3> Gift Wrap </h3>    
+                <h4> Can I do a Cash on delivery towards giftwrap order? </h4>
+                <h4> How much do I have to pay for gift wrap orders? </h4>
+                <h4> How can I place a gift wrap order? </h4>
+            </div>
+            <div class="come">
+                <h3> Global Store </h3>     
+                <h4> How can I access Global Store? </h4>
+                <h4> How do I order to an address that is different from billing address on Global Store? </h4>
+                <h4> Can I select and buy from Nykaa and Global Store in the same cart? </h4>
+                <h4> I have not received my order yet </h4>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+<script>
+
+    document.querySelector("#he1").addEventListener("click", put1);
+
+    function put1(e) {
+        e.preventDefault();
+        window.location.href = "help.html"
+    }
+    document.querySelector("#he2").addEventListener("click", put2);
+
+    function put2(e) {
+        e.preventDefault();
+        window.location.href = "helpsell.html"
+    }
+
+
+</script>

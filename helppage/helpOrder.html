@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-color: rgb(255, 255, 255);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        #par1 {
+            padding: 20px;
+        }
+
+        #par2 {
+            text-align: center;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            width: 100%;
+            background-color: rgb(252, 39, 121);
+        }
+
+        #par2>input,
+        button {
+            border-radius: 6px;
+            padding: 5px;
+        }
+
+        #par2>button {
+            background-color: rgb(220, 9, 87);
+            color: white;
+            border: 0px;
+            margin-left: -12px;
+            padding: 15px 40px;
+            border-radius: 7px;
+        }
+
+        #par2>input {
+            border: 0px;
+            width: 450px;
+            height: 32px;
+        }
+
+        #info {
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        #par1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 30px;
+        }
+
+        #par1>img {
+            width: 150px;
+            margin-left: 30px;
+        }
+
+        #par1>h5 {
+            color: rgb(255, 0, 106);
+            font-weight: normal;
+            font-family: Calibri;
+        }
+
+        #par1>h5:hover {
+            color: blue;
+        }
+
+        #he1,
+        #he2 {
+            color: rgb(255, 0, 43);
+            cursor: pointer;
+        }
+
+        #he2:hover {
+            color: blue;
+        }
+
+        #he1:hover {
+            color: blue;
+        }
+
+        #par3 {
+            margin: 20px 40px;
+        }
+
+        #cont1 {
+            display: flex;
+            flex-wrap: wrap;
+            width: 90%;
+            margin: auto;
+            /* border: 2px solid black; */
+        }
+
+        #cont1>div {
+            /* padding: 20px;   */
+            width: 40%;
+            margin: auto;
+        }
+
+        h3 {
+            background-color: white;
+            color: rgb(255, 58, 58);
+            font-size: large;
+            border: 0.5px solid rgb(141, 131, 131);
+        }
+
+        h4 {
+            background-color: rgb(242, 242, 242);
+            border: 0.5px solid rgb(224, 193, 193);
+        }
+
+        h3,
+        h4 {
+            border-radius: 3px;
+            margin: 1px;
+            cursor: pointer;
+            padding: 4px 0px 4px 20px;
+            font-family: Arial Narrow;
+            font-weight: lighter;
+        }
+
+        #psp1>div {
+            margin: 35px 0px;
+        }
+
+        #psp2>div {
+            margin: 35px 0px;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: Calibri;
+            font-weight: normal;
+            padding: 15px;
+            font-size: xx-large;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="par1">
+        <!-- <h1> NYKAA </h1>  -->
+        <img src="https://d2un9pqbzgw43g.cloudfront.net/main/nykaa-1200x800-1.png" alt="">
+        <h5 onclick="window.location.href='help.html'"> Back to help-center </h5>
+    </div>
+    <div id="par2">
+        <input type="text" id="search" placeholder="Search FAQs">
+        <button> Submit </button>
+    </div>
+    <div id="par3">
+        <p> <span id="he1"> Help-Center </span> >> <span id="he2"> Order Related </span> </p>
+    </div>
+    <h1> Order Related </h1>
+    <div id="cont1">
+        <div id="psp1">
+            <div>
+                <h3> Order Status </h3>
+                <h4> How can I change address or phone number in Order?</h4>
+                <h4> How do I check the current status of my order? </h4>
+                <h4> Why is my order not showing? </h4>
+                <h4> What do I do in cases of failed delivery? </h4>
+            </div>
+            <div>
+                <h3>Cancellations and Refund </h3>
+                <h4> Cancellation Policy </h4>
+                <h4> Are there any cancellation charges? </h4>
+                <h4> How do I cancel an order? (before it has been shipped) </h4>
+                <h4> How do I cancel an order? (once it has been shipped) </h4>
+                <h4> Will shipping charges be refunded if I cancel ? </h4>
+                <h4>When will I get my Refund? </h4>
+                <h4> What if I used coupon codes or gift card or reward points for payment and I have to cancel my
+                    order?
+                </h4>
+            </div>
+            <div>
+                <h3> Global Store </h3>
+                <h4> How can I change address or phone number for my Order? </h4>
+                <h4> How do I check the current status of my order? </h4>
+                <h4> Why is my Order not showing? </h4>
+                <h4> What are the documents that need to be submitted for delivery? </h4>
+                <h4> Aramex has sent me a link for document submission. Is that valid/ necessary? </h4>
+                <h4> I have not received my order yet ? </h4>
+                <h4> How do I cancel an order before it has been shipped </h4>
+                <h4> I have received damaged/defective/expired/wrong product in my order. How should I proceed? </h4>
+                <h4> Will customs and taxes levied on Global Store be refunded if I cancel my order? </h4>
+                <h4> How do I return an item purchased on Global Store? </h4>
+            </div>
+        </div>
+        <div id="psp2">
+            <div>
+                <h3> Returns and Refunds </h3>
+                <h4> Nykaa Return Policy </h4>
+                <h4> How do I return an item purchased on Nykaa? </h4>
+                <h4> I have received a damaged /defective /wrong product in my order, how should I proceed? </h4>
+                <h4> Can I return a Personal Care Appliance that I bought on Nykaa? </h4>
+                <h4> How can I track my Return Status? </h4>
+                <h4> When will I get my return refund? </h4>
+                <h4> Can I return part of my order? </h4>
+                <h4> How will I get refunded for the returned orders and how long will this process take? </h4>
+            </div>
+            <div>
+                <h3> International Shipping </h3>
+                <h4> How can I place International orders? </h4>
+                <h4> What are the countries where international shipping is available? </h4>
+                <h4> Are shipments from Nykaa liable for import fee in my country? </h4>
+                <h4> What payment methods are available for International orders. </h4>
+                <h4> How I will get compensated for the damaged product/s? (international shipping) </h4>
+                <h4> How can I contact Nykaa customer support if I receive a Damaged / Defective product? (international
+                    shipping) </h4>
+                <h4> Return & refund Policy for International Orders </h4>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+<script>
+
+    document.querySelector("#he1").addEventListener("click", put1);
+
+    function put1(e) {
+        e.preventDefault();
+        window.location.href = "help.html"
+    }
+    document.querySelector("#he2").addEventListener("click", put2);
+
+    function put2(e) {
+        e.preventDefault();
+        window.location.href = "helpOrder.html"
+    }
+
+
+</script>

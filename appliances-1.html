@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appliances</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <style>
+        body {
+            background-color: rgb(243, 243, 243);
+
+        }
+
+        #main {
+            margin-top: 11%;
+        }
+
+        #Appliances {
+            font-family: sans-serif;
+            font-weight: bold;
+            font-size: 13px;
+            color: rgba(3, 2, 26, 0.6);
+            padding: 5px;
+            margin-top: 10px;
+        }
+
+        #appliances_div {
+            font-family: sans-serif;
+            font-weight: 600;
+            margin: auto;
+            margin-top: 35px;
+            text-align: center;
+        }
+
+        #top_div {
+            /* border: 1px solid red; */
+            height: 200px;
+            width: 90%;
+            margin: auto;
+            margin-top: 20px;
+        }
+
+        #second_div {
+            /* border: 1px solid black; */
+            height: 320px;
+            width: 90%;
+            margin: auto;
+            margin-top: 30px;
+            display: flex;
+        }
+
+        #container {
+            /* border: 1px solid green; */
+            height: 750px;
+            width: 98%;
+            margin: 20px;
+            display: flex;
+        }
+
+        #sidebar {
+            /* border: 1px solid blue; */
+            width: 270px;
+            margin-left: 60px;
+        }
+
+        #mainbar {
+            /* border: 1px solid red; */
+            width: 850px;
+            margin-left: 30px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 420px;
+            grid-gap: 20px;
+        }
+
+        #inside_div {
+            /* border: 1px solid black; */
+            font-family: sans-serif;
+            background-color: rgb(255, 255, 255);
+            border-radius: 5px;
+        }
+
+        #featured {
+            font-size: 12px;
+            padding: 3px 5px;
+            margin-left: 6px;
+            font-weight: 550;
+            color: #fc2779;
+        }
+
+        #fea_div {
+            display: flex;
+        }
+
+        #bestseller {
+            font-size: 12px;
+            padding: 3px 5px;
+            margin-left: 6px;
+            font-weight: 550;
+            color: #5cd285;
+        }
+
+        #image_div {
+            margin-left: 30px;
+        }
+
+        #title {
+            text-align: center;
+            font-size: 13px;
+        }
+
+        #name_div {
+            width: 200px;
+            margin: auto;
+            /* border: 1px solid red; */
+        }
+
+        #price {
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+        #price_div {
+            display: flex;
+            /* border: 1px solid red; */
+            width: 100px;
+            margin: auto;
+        }
+
+        #tag {
+            font-size: 13px;
+            font-weight: 500;
+            color: rgba(101, 119, 134, 0.62);
+        }
+
+        #new1 {
+            font-size: 12px;
+            padding: 3px 5px;
+            margin-left: 6px;
+            font-weight: 550;
+            color: #6dcff6;
+        }
+
+        #top_sidebar {
+            /* border: 1px solid black; */
+            width: 270px;
+            height: 50px;
+            border-radius: 8px;
+            background-color: rgb(255, 255, 255);
+        }
+
+        #bottomsidebar {
+            /* border: 1px solid green; */
+            width: 270px;
+            height: 440px;
+            border-radius: 8px;
+            background-color: rgb(255, 255, 255);
+            margin-top: 10px;
+        }
+
+        #popularity {
+            border: 0;
+            margin: 15px 0 0 10px;
+            font-family: sans-serif;
+            font-size: 14px;
+            font-weight: 550;
+        }
+
+        #addtobag_div {
+            /* border: 1px solid red; */
+            height: 50px;
+            display: flex;
+            margin-top: 23px;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+        }
+
+        #fav_div {
+            width: 30%;
+            /* border: 1px solid blue; */
+            border-bottom-left-radius: 8px;
+            text-align: center;
+            justify-content: center;
+        }
+
+        #bag_div {
+            width: 70%;
+            /* border: 1px solid green; */
+            background-color: #fc2779;
+            text-align: center;
+            border-bottom-right-radius: 8px;
+            border-bottom: 0;
+        }
+
+        #addtobag {
+            color: white;
+            font-family: sans-serif;
+            font-weight: 550;
+        }
+
+        #fav_img {
+            width: 40px;
+            height: 40px;
+        }
+
+        #star_div {
+            /* border: 1px solid red; */
+            width: 200px;
+            height: 20px;
+            margin: auto;
+        }
+
+        #star {
+            height: 10px;
+            width: 150px;
+        }
+
+        #first_img {
+            height: 200px;
+            width: 100%;
+        }
+
+        #right_div {
+            width: 63%;
+            height: 320px;
+            /* border: 1px solid green; */
+            background-color: rgb(202, 202, 202);
+        }
+
+        #left_div {
+            width: 37%;
+            height: 320px;
+            /* border: 1px solid red; */
+
+        }
+
+        #left_img {
+            height: 320px;
+            width: 100%;
+        }
+
+        #h {
+            /* border: 1px solid red; */
+            height: 40px;
+            font-size: 26px;
+            font-family: sans-serif;
+            text-align: center;
+            margin-top: 100px;
+            color: #354A5F;
+        }
+
+        #para {
+            /* border: 1px solid black; */
+            height: 40px;
+            width: 570px;
+            margin: auto;
+            margin-top: 30px;
+            font-family: sans-serif;
+            color: #354A5F;
+            font-size: 15px;
+        }
+
+        #shopnow {
+            /* border: 1px solid green; */
+            height: 20px;
+            width: 100px;
+            margin: auto;
+            font-family: sans-serif;
+            font-size: 15px;
+            margin-top: 10px;
+            color: #fc2779;
+            font-weight: 550;
+        }
+
+        #insidebottomsidebar {
+            border-bottom: 1px solid rgb(243, 243, 243);
+            height: 43px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navbar"></div>
+
+    <div id="main">
+        <div id="Appliances">Home > Appliances</div>
+        <div id="appliances_div">Appliances(1694)</div>
+        <div id="top_div">
+            <img id="first_img"
+                src="https://images-static.nykaa.com/uploads/abc94f07-329d-4d78-813e-6d344ce6de05.jpg?tr=w-1200,cm-pad_resize"
+                alt="src">
+        </div>
+        <div id="second_div">
+            <div id="right_div">
+                <div id="h">The Must-Have Beauty Tools Guide</div>
+                <div id="para">Beauty appliances are essential in every beauty wardrobe! Check out these beauty tools
+                    that simplify (and beautify) your life.</div>
+                <div id="shopnow">Show Now ></div>
+            </div>
+            <div id="left_div">
+                <img id="left_img"
+                    src="https://www.nykaa.com/media/categoryInfo/art_banner_image/musthavebeautytoolscontentbanner.jpg"
+                    alt="img">
+            </div>
+        </div>
+        <div id="appliances_div">All Products</div>
+        <div id="container">
+            <div id="sidebar">
+                <div id="top_sidebar">
+                    <select name="popularity" id="popularity">
+                        <option value="">Sort by : Popularity</option>
+                        <option value="">Sort by : Discount</option>
+                        <option value="">Sort by : Name</option>
+                        <option value="">Sort by : Customer Top Rated</option>
+                        <option value="">Sort by : New Arrivals</option>
+                        <option value="">Sort by : Price:High To Low</option>
+                        <option value="">Sort by : Price:Low To High</option>
+                    </select>
+                </div>
+                <div id="bottomsidebar">
+                    <div id="insidebottomsidebar">
+                        <select name="popularity" id="popularity">
+                            <option value="">Category</option>
+                            <option value="">Hair Styling Tools</option>
+                            <option value="">Massage Tools</option>
+                            <option value="">Shaving Tools</option>
+                            <option value="">Face/Skin Tools</option>
+                        </select>
+                    </div>
+                    <div id="insidebottomsidebar">
+                        <select name="popularity" id="popularity">
+                            <option value="">Brand</option>
+                            <option value="">Nova</option>
+                            <option value="">Allen Truman</option>
+                            <option value="">VEGA</option>
+                            <option value="">WAHL</option>
+                        </select>
+                    </div>
+                    <div id="insidebottomsidebar">
+                        <select name="popularity" id="popularity">
+                            <option value="">Price</option>
+                            <option value="">Rs.0 - Rs.499</option>
+                            <option value="">Rs.500 - Rs.999</option>
+                            <option value="">RS.1000 - Rs.1999</option>
+                            <option value="">Rs.2000 & Above</option>
+                        </select>
+                    </div>
+                    <div id="insidebottomsidebar">
+                        <select name="popularity" id="popularity">
+                            <option value="">Discount</option>
+                            <option value="">40% & Above</option>
+                            <option value="">30% & Above</option>
+                            <option value="">20% & Above</option>
+                            <option value="">10% & Above</option>
+                        </select>
+                    </div>
+                    <div id="insidebottomsidebar">
+                        <select name="popularity" id="popularity">
+                            <option value="">Avg Customer Rating</option>
+                            <option value="">4 star & Above</option>
+                            <option value="">3 star & Above</option>
+                            <option value="">2 star & Above</option>
+                        </select>
+                    </div>
+                    <div id="insidebottomsidebar">
+                        <select name="popularity" id="popularity">
+                            <option value="">Concern</option>
+                            <option value="">Anti-Ageing</option>
+                            <option value="">Fine Lines/Wrinnkles</option>
+                            <option value="">Heat Protection</option>
+                            <option value="">Dullness</option>
+                        </select>
+                    </div>
+                    <div id="insidebottomsidebar">
+                        <select name="popularity" id="popularity">
+                            <option value="">Gender</option>
+                            <option value="">Female</option>
+                            <option value="">unisex</option>
+                            <option value="">Male</option>
+                        </select>
+                    </div>
+                    <div id="insidebottomsidebar">
+                        <select name="popularity" id="popularity">
+                            <option value="">Hair Type</option>
+                            <option value="">Straight</option>
+                            <option value="">Curly</option>
+                            <option value="">Normal</option>
+                            <option value="">Oily</option>
+                        </select>
+                    </div>
+                    <div id="insidebottomsidebar">
+                        <select name="popularity" id="popularity">
+                            <option value="">Preference</option>
+                            <option value="">Cruelty-Free</option>
+                            <option value="">Natural</option>
+                            <option value="">Paraben Free</option>
+                            <option value="">Sulphate Free</option>
+                        </select>
+                    </div>
+                    <div id="insidebottomsidebar">
+                        <select name="popularity" id="popularity">
+                            <option value="">Formulation</option>
+                            <option value="">Oil</option>
+                            <option value="">Liquid</option>
+                            <option value="">Cream</option>
+                            <option value="">Gel</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div id="mainbar"></div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script>
+
+    var products_appliance = [
+        {
+            featured: "FEATURED",
+            bestseller: "BESTSELLER",
+            image: "https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/2/9/29cd491nyphilips0015as__1_.jpg",
+            title: "Philips Selfie Straightener (HP8302/06)",
+            tag: "MRP :",
+            review: "(250)",
+            price: "₹1295",
+
+        },
+        {
+            featured: "FEATURED",
+            bestseller: "BESTSELLER",
+            image: "https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/e/f/ef439e4vhdh-05_1.jpg",
+            title: "VEGA Blooming 1000 Air VHDH-05 Hair Dryer (Color May Vary)",
+            tag: "MRP :",
+            price: "₹999",
+
+        },
+        {
+            featured: "FEATURED",
+            // bestseller : "BESTSELLER",  
+            image: "https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/4/d/4d2a894FLAWL00000012_PRA%20(1).jpg",
+            title: "Flawless Finishing Touch Brows Blush Rechargeable",
+            tag: "MRP :",
+            price: "₹2430",
+
+        },
+        {
+            featured: "FEATURED",
+            bestseller: "NEW",
+            image: "https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/1/8/18189f3ALANT00000061_OL%20(1).png",
+            title: "Alan Truman No More Split Ends - Automatic Split End Trimmer",
+            tag: "MRP :",
+            price: "₹4014",
+
+        },
+        {
+            featured: "FEATURED",
+            bestseller: "BESTSELLER",
+            image: "https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/1/2/129bc953030050107005ap__1_.jpg",
+            title: "BaByliss 2000W Hair Dryer D302RE",
+            tag: "MRP :",
+            price: "₹803",
+
+        },
+        {
+            featured: "FEATURED",
+            // bestseller : "BESTSELLER",  
+            image: "https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/8/9/8901762140893zx.png",
+            title: "Havells FD5000 Lady Facial Hair Remover, Battery Operated - Pink",
+            tag: "MRP :",
+            price: "₹1495",
+
+        },
+        {
+            featured: "BESTSELLER",
+            bestseller: "OFFER",
+            image: "https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/a/8/a85cccd5025155048801_1.jpg",
+            title: "Dyson Airwrap Complete Hair Styler - Red",
+            tag: "MRP :",
+            price: "₹44900",
+
+        },
+        {
+            featured: "BESTSELLER",
+            // bestseller : "BESTSELLER",  
+            image: "https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/8/7/8710103897392_1_.jpg",
+            title: "Philips Heated Straightening Brush (BHH880/10)",
+            tag: "MRP :",
+            price: "₹3695",
+
+        },
+        {
+            featured: "BESTSELLER",
+            bestseller: "OFFER",
+            image: "https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/1/5/15f69e4vhscc-01_1.jpg",
+            title: "VEGA VHSCC-01 3 In 1 Hair Styler",
+            tag: "MRP :",
+            price: "₹1799",
+
+        },
+        {
+            featured: "BESTSELLER",
+            // bestseller : "BESTSELLER",  
+            image: "https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/8/9/8904245716677_1.jpg",
+            title: "Nykaa Face Massage Rollers - Amethyst",
+            tag: "MRP :",
+            price: "₹2624",
+
+        },
+        {
+            featured: "BESTSELLER",
+            // bestseller : "BESTSELLER",  
+            image: "https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/1/d/1d923b14210201313908.jpg",
+            title: "Braun Face Mini Hair Remover FS1000, Electric Facial Hair...",
+            tag: "MRP :",
+            price: "₹1699",
+
+        },
+        {
+            featured: "BESTSELLER",
+            // bestseller : "BESTSELLER",  
+            image: "https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/8/9/8904320002060s.jpg",
+            title: "Agaro Hair Curler (HC-8001)",
+            tag: "MRP :",
+            price: "₹767",
+
+        },
+    ];
+
+
+    //append the data to the DOM
+
+    products_appliance.map(function (data) {
+
+        //div to be appended in the main
+
+        let main_inside = document.createElement('div');
+        main_inside.setAttribute("id", "inside_div");
+
+        //top featured or recommended itmes
+
+        let fea_div = document.createElement('div');
+        fea_div.setAttribute("id", "fea_div");
+
+        let featured1 = document.createElement('p');
+        featured1.textContent = data.featured;
+        featured1.setAttribute("id", "featured");
+
+        let bestseller1 = document.createElement('p');
+        bestseller1.textContent = data.bestseller;
+        bestseller1.setAttribute("id", "bestseller");
+
+        fea_div.append(featured1, bestseller1);
+
+        //image of the appliances
+
+        let image1 = document.createElement('img');
+        image1.setAttribute("src", data.image);
+        image1.setAttribute("id", "image_div");
+
+        //name of item section
+
+        let name_div = document.createElement('div');
+        name_div.setAttribute("id", "name_div");
+
+        var name1 = document.createElement('p');
+        name1.textContent = data.title;
+        name1.setAttribute("id", "title");
+
+        name_div.append(name1);
+
+        //price and mrp section
+
+        let price_div = document.createElement('div');
+        price_div.setAttribute("id", "price_div");
+
+        let tag = document.createElement('p');
+        tag.textContent = data.tag;
+        tag.setAttribute("id", "tag");
+
+        var price1 = document.createElement('p');
+        price1.textContent = data.price;
+        price1.setAttribute("id", "price");
+
+        price_div.append(tag, price1);
+
+        //rating section
+
+        //  let star_div = document.createElement('div');
+        //  star_div.setAttribute("id","star_div");
+
+        //  let star = document.createElement('img');
+        //  star.setAttribute("src","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwlVUuFi0dQUr52W4nYH2w-vsOF1Q-QaY-b4Nyom__82RsM4oF");
+        //  star.setAttribute("id","star");
+
+        //  let review = document.createElement('p');
+        //  review.innerHTML = data.review;
+
+        //  star_div.append(star,review);
+
+        main_inside.append(fea_div, image1, name_div, price_div);
+
+        //add to bag section
+
+        let addtobag_div = document.createElement('div');
+        addtobag_div.setAttribute("id", "addtobag_div");
+
+        let fav_div = document.createElement('div');
+        fav_div.setAttribute("id", "fav_div");
+
+        let fav = document.createElement('img');
+        fav.setAttribute("src", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTLbt9F5GLAkyrJGUQ0GiuU8eBLjecPLrUy4tZc_nuatMUEAC-");
+        fav.setAttribute("id", "fav_img");
+
+        fav_div.append(fav);
+
+        let bag_div = document.createElement('div');
+        bag_div.setAttribute("id", "bag_div");
+
+        let addtobag = document.createElement('p');
+        addtobag.innerText = "ADD TO BAG";
+        addtobag.setAttribute("id", "addtobag");
+
+        bag_div.append(addtobag);
+
+        addtobag_div.append(fav_div, bag_div);
+
+        main_inside.append(addtobag_div);
+
+        document.getElementById("mainbar").append(main_inside);
+
+    });
+
+
+</script>
+
+<script type="module">
+    import { navbar } from "../components/navbar.js";
+
+    let navbarDiv = document.getElementById('navbar');
+
+    navbarDiv.innerHTML = navbar();
+</script>

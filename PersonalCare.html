@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Care</title>
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <style>
+        body {
+            background-color: rgb(243, 243, 243);
+
+        }
+
+        #main {
+            width: 90%;
+            margin: auto;
+            margin-top: 10%;
+
+        }
+
+        #heading {
+            font-size: 32px;
+            /* border: 1px solid red; */
+            height: 50px;
+            width: 400px;
+            margin: auto;
+            margin-top: 20px;
+            font-weight: 550;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        #container {
+            /* border: 1px solid black; */
+            width: 97%;
+            height: 600px;
+            display: grid;
+            grid-template-columns: repeat(4, 280px);
+            /* grid-template-rows: repeat(2,250px); */
+            grid-gap: 25px;
+            margin-top: 30px;
+            margin-left: 70px;
+            text-align: center;
+        }
+
+        #box1 {
+            width: 280px;
+            height: 250px;
+            border: 1px solid green;
+            margin: auto;
+        }
+
+        #box1_image {
+            width: 280px;
+            height: 250px;
+            border-radius: 5px;
+        }
+
+        #box1_para {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 500;
+            margin-top: 10px;
+        }
+
+        #container2 {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 10px;
+            margin: 20px 30px 0 30px;
+        }
+
+        #heading_background {
+            background-color: rgb(243, 243, 243);
+        }
+
+        #container3 {
+            display: grid;
+            grid-template-columns: repeat(5, 250px);
+            grid-gap: 5px;
+            margin: 10px 30px 0 30px;
+        }
+
+        #box4 {
+            /* border: 1px solid red; */
+            width: 85%;
+            height: 90px;
+            margin: auto;
+            margin-top: 60px;
+        }
+
+        #img_box4 {
+            width: 100%;
+            height: 90px;
+            border-radius: 5px;
+        }
+
+        #box5 {
+            /* border: 1px solid red; */
+            width: 85%;
+            height: 100px;
+            margin: auto;
+            margin-top: 40px;
+        }
+
+        #img_box5 {
+            width: 100%;
+            height: 100px;
+            border-radius: 5px;
+        }
+
+        #container6 {
+            display: grid;
+            grid-template-columns: repeat(4, 320px);
+            grid-gap: 10px;
+            margin: 10px 40px 0 40px;
+
+        }
+
+        #box7 {
+            /* border: 1px solid green; */
+            height: 120px;
+            margin-top: 20px;
+            display: flex;
+        }
+
+        #inner1_box7 {
+            /* border: 1px solid red; */
+            height: 120px;
+            width: 200px;
+            margin-left: 100px;
+        }
+
+        #inner2_box7 {
+            /* border: 1px solid red; */
+            height: 120px;
+            width: 200px;
+            margin-left: 25px;
+        }
+
+        #inner3_box7 {
+            /* border: 1px solid red; */
+            height: 120px;
+            width: 200px;
+            margin: 0 80px 0 25px;
+        }
+
+        #box8 {
+            /* border: 1px solid black; */
+            height: 120px;
+            margin-top: 25px;
+            display: flex;
+        }
+
+        #inner1_box8 {
+            /* border: 1px solid red; */
+            height: 120px;
+            width: 200px;
+            margin-left: 180px;
+        }
+
+        #inner2_box8 {
+            /* border: 1px solid red; */
+            height: 120px;
+            width: 200px;
+            margin-left: 25px;
+        }
+
+        #box7_img {
+            height: 120px;
+            width: 200px;
+            border-radius: 5px;
+        }
+
+        #container9 {
+            display: grid;
+            grid-template-columns: repeat(3, 200px);
+            grid-template-rows: 300px;
+            grid-gap: 15px;
+            margin: 30px 0 0 50px;
+        }
+
+        #inner_container9 {
+            margin-left: 15px;
+            height: 300px;
+            width: 200px;
+            /* border: 1px solid green; */
+        }
+
+        #container9_img {
+            height: 300px;
+            width: 200px;
+            border-radius: 5px;
+        }
+
+        #container10 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            margin-top: 20px;
+        }
+
+        #inner_container10 {
+            margin-left: 30px;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+
+        #container10_img {
+            border-radius: 5px;
+        }
+
+        #container11 {
+            /* border: 1px solid blue; */
+            height: 450px;
+            width: 100%;
+            margin-top: 20px;
+            display: flex;
+        }
+
+        #box11 {
+            /* border: 1px solid red; */
+            height: 450px;
+            width: 350px;
+            margin-left: 60px;
+        }
+
+        #box12 {
+            /* border: 1px solid red; */
+            height: 450px;
+            width: 350px;
+            margin-left: 10px;
+        }
+
+        #box13 {
+            /* border: 1px solid red; */
+            height: 450px;
+            width: 350px;
+            margin-left: 10px
+        }
+
+        #container11_img {
+            height: 450px;
+            width: 350px;
+            border-radius: 5px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="navbar"></div>
+
+
+    <div id="main">
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100"
+                        src="https://images-static.nykaa.com/uploads/32c0faee-34f6-4067-9dcf-13cc2a99a6e3.jpg?tr=w-1200,cm-pad_resizeg"
+                        alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100"
+                        src="https://images-static.nykaa.com/uploads/99dae409-0b45-4359-a908-9a2b338bb63a.gif?tr=w-1200,cm-pad_resize"
+                        alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100"
+                        src="https://images-static.nykaa.com/uploads/fb223fe5-a602-4f82-bebe-fe181a12a88e.gif?tr=w-1200,cm-pad_resize"
+                        alt="Third slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100"
+                        src="https://images-static.nykaa.com/uploads/b13dc4a1-3051-44a4-a32c-85f297db7062.jpg?tr=w-1200,cm-pad_resize"
+                        alt="Third slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100"
+                        src="https://images-static.nykaa.com/uploads/913b40c3-47aa-4523-8738-cc716f4c3f9e.jpg?tr=w-1200,cm-pad_resize"
+                        alt="Third slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <div id="heading">
+            <p>BRANDS YOU WILL LOVE</p>
+        </div>
+        <div id="container">
+
+        </div>
+
+        <div id="heading_background">
+            <div id="heading">
+                <p>SHOP BY CATEGORY</p>
+            </div>
+
+
+            <div id="container2">
+            </div>
+
+
+            <div id="heading">
+                <p>BESTSELLERS</p>
+            </div>
+
+            <div id="container3">
+            </div>
+
+
+            <div id="box4">
+                <img id="img_box4"
+                    src="https://images-static.nykaa.com/uploads/ed382054-731b-4175-9e35-f9f637398ca1.jpg?tr=w-1200,cm-pad_resize"
+                    alt="box">
+            </div>
+
+            <div id="box5">
+                <img id="img_box5"
+                    src="https://images-static.nykaa.com/uploads/88f40666-10ef-45b5-82a3-1981b2424c5d.png?tr=w-1200,cm-pad_resize"
+                    alt="box5">
+            </div>
+
+            <div id="heading">
+                <p>BUDGET BUYS</p>
+            </div>
+
+            <div id="container6">
+            </div>
+
+            <div id="heading">
+                <p>FEATURED BRANDS</p>
+            </div>
+
+            <div id="box7">
+                <div id="inner1_box7">
+                    <img id="box7_img"
+                        src="https://images-static.nykaa.com/uploads/cc375fd5-6247-44cb-a439-6ca7c00c3c56.jpg?tr=w-240,cm-pad_resize"
+                        alt="img1">
+                </div>
+                <div id="inner2_box7">
+                    <img id="box7_img"
+                        src="https://images-static.nykaa.com/uploads/f00becc5-eaa2-4bea-bb79-308ed1367aa2.jpg?tr=w-240,cm-pad_resize"
+                        alt="img2">
+                </div>
+                <div id="inner2_box7">
+                    <img id="box7_img"
+                        src="https://images-static.nykaa.com/uploads/1af8698f-f4bf-409e-be24-5323376cdba5.jpg?tr=w-240,cm-pad_resize"
+                        alt="img3">
+                </div>
+                <div id="inner2_box7">
+                    <img id="box7_img"
+                        src="https://images-static.nykaa.com/uploads/69be5a28-e437-405b-9240-05730b9ede4b.jpg?tr=w-240,cm-pad_resize"
+                        alt="img4">
+                </div>
+                <div id="inner3_box7">
+                    <img id="box7_img"
+                        src="https://images-static.nykaa.com/uploads/c0b31347-2ce9-4450-8ae6-3c206e17b875.jpg?tr=w-240,cm-pad_resize"
+                        alt="img5">
+                </div>
+            </div>
+
+            <div id="box8">
+                <div id="inner1_box8">
+                    <img id="box7_img"
+                        src="https://images-static.nykaa.com/uploads/5b848f20-4e21-4821-bd39-97a7ede99847.jpg?tr=w-240,cm-pad_resize"
+                        alt="img6">
+                </div>
+                <div id="inner2_box8">
+                    <img id="box7_img"
+                        src="https://images-static.nykaa.com/uploads/17d149c8-7397-49b2-ba3d-44b122d888e2.jpg?tr=w-240,cm-pad_resize"
+                        alt="img7">
+                </div>
+                <div id="inner2_box8">
+                    <img id="box7_img"
+                        src="https://images-static.nykaa.com/uploads/4172470f-05c1-4ac1-ab9f-954bd2af3f76.jpg?tr=w-240,cm-pad_resize"
+                        alt="img8">
+                </div>
+                <div id="inner2_box8">
+                    <img id="box7_img"
+                        src="https://images-static.nykaa.com/uploads/bd64168e-d25b-4a08-8f8b-d828b09f27b1.jpg?tr=w-240,cm-pad_resize"
+                        alt="img9">
+                </div>
+            </div>
+
+            <div id="box5">
+                <img id="img_box5"
+                    src="https://images-static.nykaa.com/uploads/22752905-88d9-4f21-9475-8466d986fa33.png?tr=w-1200,cm-pad_resize"
+                    alt="box5">
+            </div>
+
+            <div id="container9">
+
+            </div>
+
+            <div id="heading">
+                <p>TRENDING NOW</p>
+            </div>
+
+            <div id="container10">
+
+            </div>
+
+            <div id="heading">
+                <p>BEAUTY ADVICE</p>
+            </div>
+
+            <div id="container11">
+                <div id="box11">
+                    <img id="container11_img"
+                        src="https://images-static.nykaa.com/uploads/cc48e02a-5038-4b4a-ba97-158e326e6ef0.jpg?tr=w-400,cm-pad_resize"
+                        alt="box11">
+                </div>
+                <div id="box12">
+                    <img id="container11_img"
+                        src="https://images-static.nykaa.com/uploads/76641667-6eed-4abb-8842-58e831fe9ce8.jpg?tr=w-400,cm-pad_resize"
+                        alt="box12">
+                </div>
+                <div id="box13">
+                    <img id="container11_img"
+                        src="https://images-static.nykaa.com/uploads/3e2290b5-1c4a-428f-9d15-8bb06c43af21.jpg?tr=w-400,cm-pad_resize"
+                        alt="box13">
+                </div>
+            </div>
+
+            <div id="box5">
+                <img id="img_box5"
+                    src="https://images-static.nykaa.com/uploads/88f40666-10ef-45b5-82a3-1981b2424c5d.png?tr=w-1200,cm-pad_resize"
+                    alt="box">
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+<script>
+
+
+
+    var data = [
+        {
+            image: "https://images-static.nykaa.com/uploads/aa83e002-ed4a-40d7-ad50-1c8d7cf80156.jpg?tr=w-300,cm-pad_resize",
+            para: "Buy 2 Get 1 on Bestsellers",
+        },
+        {
+            image: "https://images-static.nykaa.com/uploads/863c96ea-2f5c-4ed8-ad7c-ae51fa34b620.jpeg?tr=w-300,cm-pad_resize",
+            para: "Up To 30% Off",
+        },
+        {
+            image: "https://images-static.nykaa.com/uploads/8f6ff449-ad58-48ae-87c4-2c4a395637f4.jpg?tr=w-300,cm-pad_resize",
+            para: "Up To 15% Off",
+        },
+        {
+            image: "https://images-static.nykaa.com/uploads/ca23140e-6892-4129-b6ff-87c10365ede6.jpg?tr=w-300,cm-pad_resize",
+            para: "Up To 20% Off",
+        },
+        {
+            image: "https://images-static.nykaa.com/uploads/fd201ee4-1be4-4ea8-93c2-a3319cf2b0c8.jpeg?tr=w-300,cm-pad_resize",
+            para: "Up To 25% Off",
+        },
+        {
+            image: "https://images-static.nykaa.com/uploads/a2fdf6e4-f01c-4dba-8585-353d5bb19e07.jpg?tr=w-300,cm-pad_resize",
+            para: "Up To 15% Off",
+        },
+        {
+            image: "https://images-static.nykaa.com/uploads/7cfb1cb7-a9bd-4d2c-9d87-4ff52142c1b3.gif?tr=w-300,cm-pad_resize",
+            para: "Up To 25% Off",
+        },
+        {
+            image: "https://images-static.nykaa.com/uploads/3278d2cd-5f93-4fc4-b6e0-8c5e657900ed.jpg?tr=w-300,cm-pad_resize",
+            para: "Up To 20% Off",
+        },
+
+    ];
+
+    data.map(function (elem) {
+
+        let box1 = document.createElement('div');
+        box1.setAttribute("src", "box1");
+
+        let image1 = document.createElement('img');
+        image1.setAttribute("src", elem.image);
+        image1.setAttribute("id", "box1_image");
+
+        let para1 = document.createElement('p');
+        para1.innerHTML = elem.para;
+        para1.setAttribute("id", "box1_para");
+
+        box1.append(image1, para1);
+
+        document.getElementById("container").append(box1);
+
+    })
+
+    var data_2 = [
+        {
+            image: "https://images-static.nykaa.com/uploads/537d8258-20b9-45c9-ad14-8ac8f5a64e2b.jpg?tr=w-300,cm-pad_resize",
+        },
+        {
+            image: "https://images-static.nykaa.com/uploads/e1739f8c-d214-4a1d-bc87-df6a6b66f204.jpg?tr=w-300,cm-pad_resize",
+        },
+        {
+            image: "https://images-static.nykaa.com/uploads/90709376-4b26-4015-9686-1d3cdd0025af.jpg?tr=w-300,cm-pad_resize",
+        },
+        {
+            image: "https://images-static.nykaa.com/uploads/0b227d6c-3906-43f0-9676-d90fa4fd2af2.jpg?tr=w-300,cm-pad_resize",
+        },
+        {
+            image: "https://images-static.nykaa.com/uploads/69e42e7c-c470-48c1-b7a4-28ae027b96b3.jpg?tr=w-300,cm-pad_resize",
+        },
+        {
+            image: "https://images-static.nykaa.com/uploads/8da01015-11ef-451d-a3ae-1ac17250c2e6.jpg?tr=w-300,cm-pad_resize",
+        },
+        {
+            image: "https://images-static.nykaa.com/uploads/42abb3cb-5271-4504-a469-d8d1c8cf6769.jpg?tr=w-300,cm-pad_resize",
+        },
+        {
+            image: "https://images-static.nykaa.com/uploads/91f298c1-cbe8-48b6-a860-7ebd7a842ac6.jpg?tr=w-300,cm-pad_resize",
+        },
+    ];
+
+    data_2.map(function (elem) {
+
+        var box2 = document.createElement('div');
+
+        var image2 = document.createElement('img');
+        image2.setAttribute("src", elem.image);
+
+        box2.append(image2);
+
+        document.getElementById('container2').append(box2);
+
+
+    })
+
+
+    var data_3 = [
+        {
+            image: "https://images-static.nykaa.com/uploads/a43c6738-364c-4b9c-805d-780a3852a781.jpg?tr=w-240,cm-pad_resize",
+        },
+        {
+            image: "https://images-static.nykaa.com/uploads/5acbec8a-bf3c-4a6e-9b99-982254132a23.jpg?tr=w-240,cm-pad_resize",
+        },
+        {
+            image: "https://images-static.nykaa.com/uploads/2bf8ffa0-e40e-417d-92eb-5df96d488849.jpg?tr=w-240,cm-pad_resize",
+        },
+        {
+            image: "https://images-static.nykaa.com/uploads/ab620c41-f2c1-4362-a695-6202155bb3ed.jpg?tr=w-240,cm-pad_resize",
+        },
+        {
+            image: "https://images-static.nykaa.com/uploads/23326ccf-8523-4283-9bd6-317f7d4296c1.jpg?tr=w-240,cm-pad_resize",
+        },
+    ];
+
+
+    data_3.map(function (elem) {
+
+        var box3 = document.createElement('div');
+
+        var image3 = document.createElement('img');
+        image3.setAttribute("src", elem.image);
+
+        box3.append(image3);
+
+        document.getElementById("container3").append(box3);
+    })
+
+    var data_6 = [
+        {
+            image: "https://images-static.nykaa.com/uploads/61c4791e-d748-4fb3-be36-df9f3af99537.jpg?tr=w-300,cm-pad_resize",
+        },
+        {
+            image: "https://images-static.nykaa.com/uploads/999c35ab-fdfd-47db-b029-5320a369639a.jpg?tr=w-300,cm-pad_resize",
+        },
+        {
+            image: "https://images-static.nykaa.com/uploads/00c70ff6-3554-4ecf-af5f-bd4a43d3643b.jpg?tr=w-300,cm-pad_resize",
+        },
+        {
+            image: "https://images-static.nykaa.com/uploads/9c45ccbf-b173-45f3-a610-5624f11eab60.jpg?tr=w-300,cm-pad_resize",
+        },
+    ];
+
+
+    data_6.map(function (elem) {
+
+        let box6 = document.createElement('div');
+
+        let image6 = document.createElement('img');
+        image6.setAttribute("src", elem.image);
+
+        box6.append(image6);
+
+        document.getElementById("container6").append(box6);
+    })
+
+    let data_7 = [
+        {
+            image: "https://images-static.nykaa.com/uploads/90972aee-6552-47b5-963a-9372054d7a00.jpg?tr=w-200,cm-pad_resize",
+        },
+        {
+            image: "https://images-static.nykaa.com/uploads/f92749d3-71fa-42fb-969a-f0ac078f454d.jpg?tr=w-200,cm-pad_resize",
+        },
+        {
+            image: "https://images-static.nykaa.com/uploads/8addd129-dcf4-418b-9e63-6dc32847c205.jpg?tr=w-200,cm-pad_resize",
+        },
+    ];
+
+    data_7.map(function (elem) {
+
+        let box7 = document.createElement('div');
+        box7.setAttribute("id", "inner_container9");
+
+        let image7 = document.createElement('img');
+        image7.setAttribute("src", elem.image);
+        image7.setAttribute("id", "container9_img");
+
+        box7.append(image7);
+
+        document.getElementById("container9").append(box7);
+
+    })
+
+    let data_8 = [
+        {
+            image: "https://images-static.nykaa.com/uploads/cecace7d-9bb7-49a9-ba50-aa6a716e511f.jpg?tr=w-600,cm-pad_resize",
+        },
+        {
+            image: "https://images-static.nykaa.com/uploads/e4a86231-3c25-40b2-9af5-25d9a0a15b45.jpg?tr=w-600,cm-pad_resize",
+        },
+        {
+            image: "https://images-static.nykaa.com/uploads/61d47d5a-d5b1-4c5d-be66-2d9f0936a9fd.jpg?tr=w-600,cm-pad_resize",
+        },
+        {
+            image: "https://images-static.nykaa.com/uploads/ba2a185e-682a-44a0-9b5b-4f2166309d42.jpg?tr=w-600,cm-pad_resize",
+        },
+    ];
+
+    data_8.map(function (elem) {
+
+        let box10 = document.createElement('div');
+        box10.setAttribute("id", "inner_container10")
+
+        let image10 = document.createElement('img');
+        image10.setAttribute("src", elem.image);
+        image10.setAttribute("id", "container10_img")
+
+        box10.append(image10);
+
+        document.getElementById("container10").append(box10);
+    })
+
+</script>
+
+<script type="module">
+    import { navbar } from "../components/navbar.js";
+
+    let navbarDiv = document.getElementById('navbar');
+
+    navbarDiv.innerHTML = navbar();
+</script>

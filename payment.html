@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Card Details</title>
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/payment.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="https://d2un9pqbzgw43g.cloudfront.net/main/nykaa-1200x800-1.png" alt="">
+        </div>
+        <div>
+            <h3> 1-LOGIN </h3>
+        </div>
+        <div>
+            <h3> 2-ADDRESS </h3>
+        </div>
+        <div>
+            <h3 style="border-bottom: 3px solid red ;color: red;"> 3-PAYMENT </h3>
+        </div>
+    </header>
+    
+    <div class="mainAddress">
+        <form class="addressForm">
+            <h1>Complete Payment</h1>
+            <p>Name On Card</p>
+            <input type="text" class="name" placeholder="Enter your name" />
+            <p>Card Number</p>
+            <input type="number" class="cardNumber" placeholder="Enter your card number" />
+            <p>CVV</p>
+            <input type="number" class="CVV" placeholder="Enter your CVV" />
+            <p>Expiry Date</p>
+            <input type="text" class="expDate" placeholder="Enter expiry date" />
+            <input type="submit" id="submit" />
+        </form>
+    </div>
+</body>
+
+</html>
+
+<script>
+    document.querySelector("form").addEventListener("submit", fnLogin);
+    function fnLogin(event) {
+        event.preventDefault();
+
+        var cardNumber = document.querySelector(".cardNumber").value;
+        var cvv = document.querySelector(".CVV").value;
+        var expDate = document.querySelector(".expDate").value;
+
+        if (cardNumber == 123 && cvv == 123 && expDate == "12/25") {
+            window.location.href = "otp.html";
+            alert("Redirecting to OTP page");
+        } else {
+            alert("Details incorrect!");
+        }
+    }
+</script>
+
+<script type = "module" src="./scripts/payment.js"></script>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Mode</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <style>
+        body {
+            background-color: rgb(243, 243, 243);
+            font-family: Calibri;
+            margin: 0px;
+        }
+
+        header>div>img {
+            width: 120px;
+        }
+
+        header {
+            display: flex;
+            position: fixed;
+            width: 100%;
+            margin-top: 0px;
+            /* border: 1px solid black; */
+            background-color: white;
+        }
+
+        header>div>h3 {
+            padding: 20px;
+            margin-left: 20px;
+        }
+
+        header>div {
+            display: flex;
+            justify-content: center;
+            margin-top: 0px;
+            align-items: center;
+            /* margin: 0px 20px; */
+        }
+
+        #part3 {
+            /* background-color: white; */
+            padding: 15px 20px;
+            margin: 10px;
+            flex: 1;
+            /* border: 2px solid black; */
+        }
+
+
+        #part1>h4 {
+            background-color: white;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: x-large;
+            color: rgb(255, 20, 20);
+        }
+
+        #part1 {
+            /* border: 2px solid black;  */
+            flex: 1;
+            padding-left: 20px;
+        }
+
+
+        #box1 {
+            display: flex;
+        }
+
+        #img2 {
+            width: 90px;
+            height: 100px;
+            padding: 20px;
+        }
+
+        #box1 {
+            background-color: white;
+            margin: 0px 0px 40px 0px;
+        }
+
+        #box2 {
+            background-color: white;
+            padding: 20px;
+            font-family: 'Arial Narrow;
+
+        }
+
+        #part2 {
+            /* border: 2px solid black;     */
+            background-color: white;
+            width: 60%;
+            padding: 10px 20px;
+            margin: auto;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #par2 {
+            /* display: flex;
+            flex-wrap: wrap; */
+            margin: auto;
+            justify-content: space-around;
+            padding-top: 120px;
+        }
+
+        #pic2 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+            width: 50%;
+        }
+
+        #pic2>div {
+            /* border: 2px solid black ;  */
+            /* margin: 10px; */
+            text-align: center;
+            width: 160px;
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+            padding: 7%;
+            padding-top: 4%;
+            padding-bottom: 4%;
+            border-radius: 15px;
+        }
+
+        #pic2>div>img {
+            width: 100%;
+            /* height: 130px;  */
+            border-radius: 14px;
+            height: 60%;
+            /* border: 2px solid red; */
+
+        }
+        #pic2>div>input{
+            /* height: 1000px; */
+            width: 100%;
+            height: 1.5em;
+            /* border: 0; */
+        }
+
+        #but1 {
+            width: 30%;
+            font-size: large;
+            border: 0px;
+            padding: 15px;
+            margin-top: 20px;
+            background-color: rgb(252, 39, 121);
+            color: white;
+            cursor: pointer;
+        }
+
+        
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="https://d2un9pqbzgw43g.cloudfront.net/main/nykaa-1200x800-1.png" alt="">
+        </div>
+        <div>
+            <h3> 1-LOGIN </h3>
+        </div>
+        <div>
+            <h3> 2-ADDRESS </h3>
+        </div>
+        <div>
+            <h3 style="border-bottom: 3px solid red ;color: red;"> 3-PAYMENT </h3>
+        </div>
+    </header>
+    <div id="par2">
+        <div id="part1">
+            <h4> PAYMENT </h4>
+        </div>
+        <div id="part2">
+            <div id="pic2">
+                <div>
+                    <img src="https://logowik.com/content/uploads/images/787_mastercard.jpg" alt="">
+                    <h3> Card Payment </h3>
+                </div>
+            </div>
+            <button id="but1"> Enter Card Details </button>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
+
+
+<script>
+
+    document.querySelector("#but1").addEventListener("click", pa1);
+
+    function pa1() {
+        window.location.href = "payment.html"
+    }
+
+
+</script>
+
+<!-- // let userStack = JSON.parse(localStorage.getItem("userDataBase")) ;  -->

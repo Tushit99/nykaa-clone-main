@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: rgb(244, 244, 244);
+            width: 80%;
+            margin: auto;
+        }
+
+        #box2 {
+            border: 0px;
+            width: 450px;
+            margin: auto;
+            height: 450px;
+            margin-top: 30px;
+            font-family: Arial;
+            text-align: left;
+            border-radius: 10px;
+            background-color: #ffffff;
+            padding: 20px 0px 50px 0px;
+            box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+        }
+
+        #main {
+            border: 0px;
+            width: 450px;
+            margin: auto;
+            height: 450px;
+            margin-top: 30px;
+            font-family: Arial;
+            text-align: center;
+            border-radius: 10px;
+            background-color: rgb(255, 255, 255);
+            padding: 20px 0px 50px 0px;
+            box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+        }
+
+        td {
+            text-align: left;
+            padding: 20px;
+            font-size: x-large;
+            font-weight: bolder;
+        }
+
+        #login {
+            font-size: x-large;
+            padding: 6px 40px;
+            border-radius: 30px;
+            margin-top: 10px;
+            border: 0px;
+            cursor: pointer;
+            background-color: rgb(255, 124, 146);
+            color: white;
+        }
+
+        #par1 {
+            margin-bottom: 10px;
+        }
+
+        #par2,
+        h4 {
+            font-family: Arial Narrow;
+        }
+
+        #user-name {
+            width: 200px;
+            border-radius: 10px;
+            height: 20px;
+            padding: 5px 15px;
+            border: 2px solid black;
+        }
+
+        #user-pass {
+            width: 200px;
+            border-radius: 10px;
+            height: 20px;
+            padding: 5px 15px;
+            border: 2px solid black;
+        }
+
+        h4 {
+            cursor: pointer;
+        }
+
+        #par1>img {
+            width: 50%;
+        }
+
+        #power {
+            padding: 30px;
+        }
+
+        #power>h2,
+        h4 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div id="par1">
+            <img src="https://www.analyticssteps.com/backend/media/thumbnail/6743613/7557273_1606234814_nyka.jpg"
+                alt="">
+            <h1> LOG IN </h1>
+        </div>
+        <div id="par2">
+            <form>
+                <table>
+                    <tr>
+                        <td> Name : </td>
+                        <td> <input type="name" id="user-name" class="a1" required></td>
+                    </tr>
+                    <tr>
+                        <td> Password : </td>
+                        <td> <input type="password" id="user-pass" class="a1" required></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <h4> HAVE YOU FORGOTTEN YOUR PASSWORD?</h4>
+        <button id="login"> LOG IN </button>
+    </div>
+    <div id="box2">
+        <div id="power">
+            <h2>The Nykaa Story</h2>
+            <h4> India’s largest omnichannel beauty destination </h4>
+            <p> India’s largest omnichannel beauty destination
+                Since our launch, we have not only redefined the art of e-retailing beauty and personal care in India,
+                but also have been instrumental in fostering the growth of a previously relatively nascent ecosystem.
+                From bringing you domestic brands, international brands, luxury and prestige brands, premium brands,
+                niche and cult brands and expert advice and videos, coupled with our understanding of the needs and
+                preferences of the consumers,to more than 72 Luxe and On-Trend and Kiosk Stores, an ever growing online
+                community for beauty buffs, and a Beauty Helpline, we go out of our way to give you only the very best.
+            </p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+<script>
+
+    document.querySelector("#login").addEventListener("click", check);
+
+    var comp = JSON.parse(localStorage.getItem("userDataBase"));
+
+    function check(e) {
+        e.preventDefault();
+
+        let n1 = document.querySelector("#user-name").value;
+        let n2 = document.querySelector("#user-pass").value;
+
+        for (var i = 0; i < comp.length; i++) {
+            // console.log(comp[i]); 
+            if (n1 == "" && n2 == "") {
+                swal({
+                    title: "fill all",
+                    text: "Please fill all required information",
+                    icon: "info",
+                    button: "Ok",
+                });
+            }
+            else if (comp[i].name == n1) {
+                if (comp[i].password == n2) {
+                    alert("Login Successful")
+                    window.location.href = "index.html";
+                }
+                else {
+                    swal({
+                        title: "Wrong password",
+                        text: "Your password is wrong",
+                        icon: "warning",
+                        button: "Ok",
+                    });
+                }
+            }
+            else {
+                swal({
+                    title: "Wrong Name",
+                    text: "Your Name is wrong",
+                    icon: "warning",
+                    button: "Ok",
+                });
+            }
+        }
+    }
+
+
+
+</script>

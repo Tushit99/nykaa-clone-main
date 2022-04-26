@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <style>
+        body {
+            background-color: rgb(243, 243, 243);
+            font-family: Calibri;
+            margin: 0px;
+        }
+
+        header>div>img {
+            width: 120px;
+        }
+
+        .tick {
+            color: rgb(0, 241, 0);
+        }
+
+        header {
+            display: flex;
+            position: fixed;
+            width: 100%;
+            margin-top: 0px;
+            /* border: 1px solid black; */
+            background-color: white;
+        }
+
+        header>div>h3 {
+            padding: 20px;
+            margin-left: 20px;
+        }
+
+        header>div {
+            display: flex;
+            justify-content: center;
+            margin-top: 0px;
+            align-items: center;
+            /* margin: 0px 20px; */
+        }
+
+        #part3 {
+            /* background-color: white; */
+            padding: 15px 20px;
+            margin: 10px;
+            flex: 1;
+            /* border: 2px solid black; */
+        }
+
+        #part2 {
+            /* border: 2px solid black;     */
+            background-color: white;
+            padding: 10px 20px;
+            margin: 10px;
+            flex: 1;
+        }
+
+        #part1>h4 {
+            background-color: white;
+            padding: 10px 20px;
+        }
+
+        #part1 {
+            /* border: 2px solid black;  */
+            flex: 1;
+        }
+
+        #num2 {
+            width: 300px;
+            margin: 20px;
+            border: 0px;
+            padding: 4px 10px;
+            border-bottom: 2px solid rgb(175, 175, 175);
+        }
+
+        #but1 {
+            width: 100%;     
+            font-family: monospace;    
+            font-size: large;    
+            border: 0px;     
+            padding: 15px;     
+            background-color: rgb(252, 39, 121);     
+            color: white;        
+            cursor: pointer;     
+        }
+
+        #box1 {
+            display: flex;
+        }
+
+        #img2 {
+            width: 90px;
+            height: 100px;
+            padding: 20px;
+        }
+
+        #box1 {
+            background-color: white;
+            margin: 0px 0px 40px 0px;
+        }
+
+        #box2 {
+            background-color: white;
+            padding: 20px;
+        }
+
+        #box2>div {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #par2 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding-top: 120px;
+        }
+    </style>
+    <link rel="stylesheet" href="./styles/products.css">
+
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="https://d2un9pqbzgw43g.cloudfront.net/main/nykaa-1200x800-1.png" alt="">
+        </div>
+        <div>
+            <h3 style="border-bottom: 3px solid red ;"> 1-LOGIN </h3>
+        </div>
+        <div>
+            <h3> 2-ADDRESS </h3>
+        </div>
+        <div>
+            <h3> 3-PAYMENT </h3>
+        </div>
+    </header>
+    <div id="par2">
+        <div id="part1">
+            <h4> Login/Register </h4>
+        </div>
+        <div id="part2">
+            <h4> Login or Register </h4>
+            <hr>
+            <h4> <span class="tick">&#10004;</span> Get Reward Points on new registration </h4>
+            <h4> <span class="tick">&#10004;</span> Redeem your Coupons & Reward Points </h4>
+            <br>
+            <input type="text" id="num2" placeholder="Or Enter Email Or Phone Number ">
+            <br>
+            <button id="but1"> NEXT ></button>
+        </div>
+        <div id="part3">
+            <div id="add1">
+                <div id="container">
+                    <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQILdgS2XQDAKSKKOQp6sEU1ZLgICkzHewKhw&usqp=CAU"
+                        id="img2" alt="">
+                    <div>
+                        <h5 id="nameof"></h5>
+                        <h5 id="sizeof"> L </h5>
+                    </div> -->
+                </div>
+                <div id="box2">
+                    
+                    <div>
+                        <h4> Shipping Charge </h4>
+                        <h4> Free </h4>
+                    </div>
+                    <hr>
+                    <div>
+                        <h4>Grand Total </h4>
+                        <h4 class="totalprice"> </h4>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script type="module" src="./scripts/cart.js"></script>i
+<script>
+
+    // let userStack = JSON.parse(localStorage.getItem("userDataBase")) ; 
+
+    // let name = document.getElementById("nameof");
+    // name.textContent = userDataBase.name ;
+
+    // let size = document.querySelector("#sizeof");
+    // size.textContent = userDataBase.size ;
+
+    // let quantity = document.querySelector("#quy");
+    // quantity.textContent = userDataBase.quy ;
+
+    // let total = document.querySelector("#total");
+    // total.textContent = userDataBase.total;
+
+    // let totalof = document.querySelector("#totalof");
+    // totalof.textContent = userDataBase.totalof; 
+
+
+    document.querySelector("#but1").addEventListener("click", check);
+
+    function check(e){
+        var number = document.querySelector("#num2").value 
+
+        if(number.length<10){  
+            swal({
+                title: "Incorrect Information ",
+                text: "Please Check Properly",
+                button: "Ok",
+            });
+        }
+        else{
+            window.location.href = "address.html" ; 
+        }
+    }
+
+
+</script>
+
+<!-- // let userStack = JSON.parse(localStorage.getItem("userDataBase")) ;  -->

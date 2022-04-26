@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles/products.css">
+    <style>
+        body {
+            background-color: rgb(243, 243, 243);
+            font-family: Calibri;
+            margin: 0px;
+        }
+
+        header>div>img {
+            width: 120px;
+        }
+
+        header {
+            display: flex;
+            position: fixed;
+            width: 100%;
+            margin-top: 0px;
+            /* border: 1px solid black; */
+            background-color: white;
+        }
+
+        header>div>h3 {
+            padding: 20px;
+            margin-left: 20px;
+        }
+
+        header>div {
+            display: flex;
+            justify-content: center;
+            margin-top: 0px;
+            align-items: center;
+            /* margin: 0px 20px; */
+        }
+
+        #part3 {
+            /* background-color: white; */
+            padding: 15px 20px;
+            margin: 10px;
+            flex: 1;
+            /* border: 2px solid black; */
+        }
+
+
+        #part1>h4 {
+            background-color: white;
+            padding: 10px 20px;
+            color: rgb(255, 20, 20);
+        }
+
+        #part1 {
+            /* border: 2px solid black;  */
+            flex: 1;
+            padding-left: 20px;
+        }
+
+
+        #box1 {
+            display: flex;
+        }
+
+        #img2 {
+            width: 90px;
+            height: 100px;
+            padding: 20px;
+        }
+
+        #box1 {
+            background-color: white;
+            margin: 0px 0px 40px 0px;
+        }
+
+        #box2 {
+            background-color: white;
+            padding: 20px;
+            font-family: 'Arial Narrow;
+
+        }
+
+        #part2 {
+            /* border: 2px solid black;     */
+            background-color: white;
+            padding: 10px 20px;
+            margin: 10px;
+            flex: 1;
+        }
+
+        #part2>h4,
+        h5 {
+            color: gray;
+            font-family: Arial;
+            font-weight: lighter;
+        }
+
+        #box2>div {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #par2 {
+            display: flex;
+            flex-wrap: wrap;
+            margin: auto;
+            justify-content: space-around;
+            padding-top: 120px;
+        }
+
+        .look {
+            padding: 10px 8px;
+            margin: 8px 0px;
+        }
+
+        #ttarea {
+            padding: 10px 5px;
+            margin: 8px 0px;
+        }
+
+        #totalof,
+        #total {
+            color: teal;
+        }
+
+        #but2 {
+            width: 100%;
+            font-family: monospace;
+            font-size: large;
+            border: 0px;
+            padding: 15px;
+            background-color: rgb(252, 39, 121);
+            color: white;
+            margin: 10px 0px;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="https://d2un9pqbzgw43g.cloudfront.net/main/nykaa-1200x800-1.png" alt="">
+        </div>
+        <div>
+            <h3> 1-LOGIN </h3>
+        </div>
+        <div>
+            <h3 style="border-bottom: 3px solid red ;color: red;"> 2-ADDRESS </h3>
+        </div>
+        <div>
+            <h3> 3-PAYMENT </h3>
+        </div>
+    </header>
+    <div id="par2">
+        <div id="part1">
+            <h4> Address </h4>
+        </div>
+        <div id="part2">
+            <h3> New Address </h3>
+            <hr>
+            <h5> Select Country </h5>
+            <input type="text" class="look" value="India">
+            <h4> Name : <input type="text" class="look" placeholder="Name"> </h4>
+            <h4> Email : <input type="email" class="look" placeholder="Email"> </h4>
+            <h4> Phone : <input type="number" class="look" placeholder="Phone Number"> </h4>
+            <h4> Code : <input type="text" class="look" placeholder="Postal Code"> </h4>
+
+            <textarea id="ttarea" style="width: 92%;" rows="4" placeholder="Address "></textarea>
+            <button id="but2"> SHIP TO THIS ADDRESS ></button>
+        </div>
+        <div id="part3">
+            <div id="add1">
+                <div id="container">
+                    <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQILdgS2XQDAKSKKOQp6sEU1ZLgICkzHewKhw&usqp=CAU"
+                        id="img2" alt="">
+                    <div>
+                        <h5 id="nameof"></h5>
+                        <h5 id="sizeof"> L </h5>
+                    </div> -->
+                </div>
+                <div id="box2">
+
+                    <div>
+                        <h4> Shipping Charge </h4>
+                        <h4> Free </h4>
+                    </div>
+                    <hr>
+                    <div>
+                        <h4>Grand Total </h4>
+                        <h4 class="totalprice"> </h4>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script type = "module" src="./scripts/cart.js"></script>
+<script>
+
+    // let userStack = JSON.parse(localStorage.getItem("userDataBase")) ; 
+
+    // let name = document.getElementById("nameof");
+    // name.textContent = userDataBase.name ;
+
+    // let size = document.querySelector("#sizeof");
+    // size.textContent = userDataBase.size ;
+
+    // let quantity = document.querySelector("#quy");
+    // quantity.textContent = userDataBase.quy ;
+
+    // let total = document.querySelector("#total");
+    // total.textContent = userDataBase.total;
+
+    // let totalof = document.querySelector("#totalof");
+    // totalof.textContent = userDataBase.totalof; 
+
+    document.querySelector("#but2").addEventListener("click", page);
+
+    function page() {
+
+        alert("Address Filled Successfully");
+        window.location.href = "cartpay.html";
+    }
+
+
+</script>
+
+<!-- // let userStack = JSON.parse(localStorage.getItem("userDataBase")) ;  -->
